@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="student login.css">
+  <title>Student Login</title>
+  <script>
+    function validateForm(){
+      var nameid=document.getElementById("name1");
+      var email = document.getElementById('eid').value;
+			var at = email.indexOf("@");
+			var dot = email.lastIndexOf(".");
+      var nameid2=document.getElementById("name2");
+      var cpass=document.getElementById("pass1");
+      var rpass=document.getElementById("pass2");
+      if(nameid=""||nameid==null)
+      {
+        document.getElementById("n1").innerHTML="Name required";
+				document.getElementById("name1").style.backgroundColor="red";
+      }
+      if ((at<1) || (dot<at+2) || (dot+2 >= email.length) || email == "")
+			{
+				
+				
+				document.getElementById("mail").innerHTML="Please enter a valid e-mail address";
+				document.getElementById("eid").style.backgroundColor="red";
+				
+			}	
+      if(nameid2=""||nameid2==null)
+      {
+        document.getElementById("n2").innerHTML="Institution name required";
+				document.getElementById("name2").style.backgroundColor="red";
+      }
+      if(cpass!=rpass)
+      {
+        document.getElementById("p1").innerHTML="Password do not match";
+				document.getElementById("pass2").style.backgroundColor="red";
+				
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div>
+      <img src="https://static.thenounproject.com/png/1234047-200.png" width="60" height="60">
+      <pre> Learning Space</pre>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="C:\Users\Nishtha\OneDrive\Desktop\login.html">Go Back</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="newbody">
+    <div class="login_form">
+        <div class="details">
+          
+            <div class="wrap">
+              <label>Name</label><span id="n1"></span>
+              <input type="text" class="input" id="name1">
+              </div>
+              
+            <div class="wrap">
+              <label>Email</label><span id="mail"></span>
+              <input type="text" class="input" id="eid">
+              </div>
+              <div class="wrap">
+                <label>Name of the institution</label><span id="n2"></span>
+                <input type="text" class="input" id="name2">
+                </div>
+            <div class="wrap">
+              <label>Password</label>
+              <input type="password" class="input" data-type="password" id="pass1">
+              </div>
+              <div class="wrap">
+                <label>Confirm password</label><span id="p1"></span>
+                <input type="password" class="input" id="pass2">
+                </div>
+            <button type="submit" class="button" onclick="validateForm()"><h1 class="sign">Sign up</h1></button>
+        
+        </div>
+          <img class="fox" src="https://static.thenounproject.com/png/1234047-200.png" />
+        <div class="details-two">
+         <h1 class="back">Hello,</h1>
+          <p class="log">Dear student, please fill your details to join the Learning Space!</p>
+        </div>
+        
+      </div>
+    </div>
+</body>
+</html>
