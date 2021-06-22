@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="student.css">
+  <title>Student ecell</title>
+  <script
+	src="https://code.jquery.com/jquery-3.4.1.js"
+	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+	crossorigin="anonymous"></script>
+<script>
+  function SubForm (){
+	  $.ajax({
+		  url:"https://api.apispreadsheets.com/data/12375/",
+		  type:"post",
+		  data:$("#myForm").serializeArray(),
+		  success: function(){
+			  alert("Form Data Submitted :)")
+		  },
+		  error: function(){
+			  alert("There was an error :(")
+		  }
+	  });
+  }
+</script>
+</head>
+<body>
+
+    <header>
+      <div>
+        <img src="https://static.thenounproject.com/png/1234047-200.png" width="60" height="60">
+        <pre> Learning Space</pre>
+      </div>
+      <nav>
+        <ul>
+          
+	      <li><a href="C:\Users\Nishtha\OneDrive\Desktop\ecell\learnmore.html">go back</a></li>
+       
+        </ul>
+      </nav>
+	  </header>
+	  <section>
+	  <div class="container">
+		  <p style="font-weight: bolder;">Hello student, here is the chance to get mentorship from an expert for your idea.
+		   Your idea is only visible to our experts, no student can view your idea. Feel free to let us know about your idea and describe it's main elements.</p>
+	  <form id="myForm">
+				<div class="form">
+				<label for="email">E-mail</label>
+				<input type="email" id="email" name="email" placeholder="E-mail" />
+				</div>
+				<br>
+				<div class="form">
+				<label for="message">Add Ideas</label>
+				<input type="text"  name="idea"/>
+				</div>
+	</form>
+			<br>
+			<br>
+				<button type="submit" onclick='SubForm()'>Submit</button>
+			<div class="buttons">
+				
+				<a href="C:\Users\Nishtha\OneDrive\Desktop\ecell\student.html">	<button>Add more</button>	</a>
+		</div>
+	  </section>
+	  
+	
+</body>
+</html>

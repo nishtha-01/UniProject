@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="company.css">
+  <title>expert ecell</title>
+  
+  <script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/12343/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+					
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+	
+</head>
+<body>
+
+    <header>
+      <div>
+        <img src="https://static.thenounproject.com/png/1234047-200.png" width="60" height="60">
+        <pre> Learning Space</pre>
+      </div>
+      <nav>
+        <ul>
+          
+	      <li><a href="e-cell.html">go back</a></li>
+       
+        </ul>
+      </nav>
+	  </header>
+	  <section>
+	  <div class="container">
+		  <p style="font-weight: bolder;">Add some interesting and mind boggling questions for all of our users to solve. Make sure you give the proper description of the problem. If it is a coding question then do make sure that you have mentioned the constraints and test cases as well</p>
+	  <form id="myForm">
+
+				<div class="form">
+				<label for="email">E-mail</label>
+				<input type="email" id="email" name="e-mail" placeholder="E-mail" required/>
+				</div>
+				<br>
+				<div class="form">
+				<label for="message">Add Challenge</label>
+				<input type="text" name="challenges" required/>
+				</div>
+		</form>
+				<br>
+				<br>
+				<button type="submit" onclick="SubForm()">Submit</button>
+				<br>
+				<div class="buttons">
+				
+					<a href="C:\Users\Nishtha\OneDrive\Desktop\ecell\company.html"><button>Add more</button></a>
+					<a href="https://docs.google.com/spreadsheets/d/1uKhhO_UzJKPbTzvnrqO_eyKOwiOBCHsIsAWnKvzuvNQ/edit?usp=sharing" target="_blank"><button>View challenges</button></a>
+				</div>
+		</div>
+	  </section>
+	  
+    
+	
+</body>
+</html>

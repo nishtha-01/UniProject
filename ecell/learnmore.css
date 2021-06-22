@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    margin:0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), 
+    url(https://wallpapercave.com/wp/wp6543887.png) repeat;
+    background-size: cover;
+    color: black;
+    font-family: "open sans";
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+header{
+    display:flex;
+    justify-content: space-between;
+    color: white;
+    background: rgba(0,0,0,0.2)
+  }
+  
+  header div{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Pacifico;
+    margin: 0 2rem;
+  }
+  
+  header div i{
+    font-size: 2rem;
+    margin: 1rem;
+  }
+  
+  
+  header nav{
+    padding: 1rem 2rem;
+  }
+  
+  nav ul li{
+    list-style: none;
+    display: inline;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+  }
+  
+  nav li a{
+    padding: 1rem;
+    margin: 1rem;
+    text-decoration: none;
+    color: white;
+    transition: all 250ms ease-in;
+  }
+  
+  nav li a:hover{
+    background: rgba(255,255,255,.3);
+    color: black;
+  }
+  .welcome-text{
+  position: absolute;
+  width: 90%;
+  color: #fff;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  }
+  .anothertext{
+    position: absolute;
+    width: 90%;
+    color: #fff;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    }
+  .welcome-text h1{
+  text-align: center;
+  color: pink;
+  text-transform: uppercase;
+  font-size: 29px;
+  
+  }
+  .welcome-text p{
+  margin: 10px 0 40px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  
+  }
+  
+  .anothertext p{
+    margin: 10px 0 40px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    
+    }
+  .welcome-text a{
+  border: 1px solid #fff;
+  padding: 10px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 20px;
+  }
+  .anothertext a{
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    }
+  .btn{
+  text-decoration: none;
+  padding: 10px 45px;
+  text-align: center;
+  color: #fff;
+  border: 2px solid #fff;
+  transition: .6s;
+  animation: animate 2s 1;
+  }
+  .btn:hover{
+  background-color: #fff;
+  color: #262626;
+  }
+  .btn1{
+    text-decoration: none;
+    padding: 10px 45px;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #fff;
+    transition: .6s;
+    animation: animate 2s 1;
+    }
+    .btn1:hover{
+    background-color: #fff;
+    color: #262626;
+    }
+  
